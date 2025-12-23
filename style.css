@@ -1,1 +1,92 @@
+html, body {
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+background-color: green;
+}
 
+body{
+  width: 100%;
+  min-height: 100vh;
+  animation: flashColors 0.5s infinite steps(2);
+}
+
+
+
+
+
+h1 {
+  font-family: "Mountains of Christmas", cursive;
+  color: white;
+  text-align: center;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  margin: 1rem 0;
+}
+
+p {
+  font-family: "Mountains of Christmas", cursive;
+  color: white;
+  text-align: center;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  margin: 0.5rem 1rem;
+}
+
+#gif1 img {
+  width: 90%;
+  max-width: 360px;   /* adjust size here */
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+#buttons {
+  width: 80%;
+  max-width: 360px;   /* adjust size here */
+   justify-content: center;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#buttons button{
+  height: 40px;
+  width: 40px;
+  background-color:yellow;
+  color:black;
+  margin: 5px;
+}
+
+#buttons a{
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+#homeButton{
+   background-color:yellow;
+   color:black;
+  width: 60px;
+  max-width: 360px;   /* adjust size here */
+   justify-content: center;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#homeButton a{
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+@keyframes flashColors {
+  0%   { background-color: red; }
+  50%  { background-color: green; }
+  100% { background-color: red; }
+}
